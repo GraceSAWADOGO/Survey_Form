@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">FreeCodeCamp Survey</h1>
+    <p id="description">Thank you for your attention let's help me to show you my potential</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name:
+        </label>
+        <input id="name" type="text" placeholder="Please enter your name" required>
+        <label id="email-label">Email:
+        </label>
+        <input id="email" type="email" required placeholder="Please enter your email">
+        <label id="number-label">Age:
+        </label>
+        <input id="number" type="number" min="1" max="100" placeholder="Please enter your age">
+      </fieldset>
+      <fieldset>
+        <select id="dropdown">
+          <option disabled selected value>select your favorite language</option>
+          <option>Python</option>
+          <option>Java</option>
+          <option>C#</option>
+          <option>HTML/CSS/JS</option>
+        </select>
+        <label> What is your level in this language</label>
+        <input type="radio" value="beginner" name="user-level">
+        <label>Beginner</label>
+        <input type="radio"  value="intermediate" name="user-level">
+        <label> Intermediate</label>
+        <input type="radio" value="senior" name="user-level">
+        <label>Senior</label>
+        <label> what is your preference in development:</label>
+        <select >
+          <option disabled selected value>select your preference in development</option>
+          <option>Frontend</option>
+          <option>Backend</option>
+          <option>FullStack</option>
+        </select>
+        <label>What did you want to learn</label>
+        <input type="checkbox" value="frontend-project">
+        <label>Frontend-Project</label>
+        <input type="checkbox" value="backend-project">
+        <label>Backend-Project</label>
+        <input type="checkbox" value="project-management-">
+        <label>Project-Management</label>
+        <input type="checkbox" value="nodejs">
+        <label>NodeJs</label>
+        <input type="checkbox" value="cybersecurity">
+        <label>Cybersecurity</label>
+        <input type="checkbox" value="database">
+        <label>DataBase</label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Commentaires</legend>
+            
+        <label for="comments">Any comments or suggestions ?</label>
+        <textarea 
+          id="comments" 
+          name="comments" 
+          rows="5" 
+          placeholder="Express yourself here..."
+        ></textarea>
+      </fieldset>
+      
+      <button type="submit" id="submit" value="submit">submit</button>
+    </form>
+</body>
+</html>
